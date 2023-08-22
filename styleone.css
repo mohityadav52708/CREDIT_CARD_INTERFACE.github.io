@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,#090909,#12bcff,#013160);
+    /* background-image: linear-gradient(to right,#642B73,#C6426E); 
+    background-image: linear-gradient(to right,#03001e,#7303c0,#ec38bc); */
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.atm_1{
+    margin: 30px;
+    width: 30%;
+    height: 40vh;
+    background-color: red;
+    background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+    /* background-image: linear-gradient(to right,#03001e,#7303c0,#ec38bc);
+    background-image: linear-gradient(to right,#03001e,#7303c0);
+    background-image: linear-gradient(to right,#642B73,#C6426E); */
+    border-radius: 18px;
+    /* border-top-right-radius: 58px; */
+}
+.atm_1:hover{
+    /* rotate: 360deg; */
+    animation: rotate 1s linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.atm_2{
+    margin: 30px;
+    width: 30%;
+    height: 40vh;
+    /* background-color: red;
+    background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+    background-image: linear-gradient(to right,#03001e,#7303c0,#ec38bc); */
+    background-image: linear-gradient(to right,#03001e,#7303c0);
+    /* background-image: linear-gradient(to right,#642B73,#C6426E); */
+    border-radius: 18px;
+}
+
+.firstrow{
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    transition-delay: 3s linear;
+}
+.secondrow{
+    width: 100%;
+    display: flex;
+    transition-delay: 3s linear;
+}
+.firstrow p{
+    flex: 1;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+/* For Axis Bank Logo */
+/* .firstrow img{
+    border-radius: 50%;
+    width: 160px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+} */
+
+/* For HDFC Bank Logo */
+.firstrow img{
+    border-radius: 50%;
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+.secondrow img{
+    border-radius: 9px;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+.thirdrow{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.thirdrow p{
+    margin-left: 20px;
+    font-size: 25px;
+}
+.fourthrow{
+    display: flex;
+
+}
+.firstdiv{
+    flex-direction: column;
+    flex: 1;
+}
+.fourthrow .secondiv{
+    flex-direction: column;
+    flex: 1;
+}
+.fourthrow .secondiv #month{
+    color: whitesmoke;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.fourthrow .secondiv #date{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.fourthrow .firstdiv #number{
+    color: whitesmoke;
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 20px;
+    /* flex-direction: column; */
+}
+.fourthrow .firstdiv #valid{
+    color: whitesmoke;
+    font-size: 13px;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+.fifthrow{
+    display: flex;
+}
+.fifthrow .firstdiv{
+    display: flex;
+    flex-direction: column;
+}
+.fifthrow .secondiv{
+    display: flex;
+}
+.fifthrow .firstdiv #ownername{
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.fifthrow .firstdiv #international{
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.fifthrow .secondiv #visa{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-style: italic;
+
+}

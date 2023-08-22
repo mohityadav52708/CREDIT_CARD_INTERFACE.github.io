@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,#090909,#12bcff,#013160);
+
+}
+.flip-card {
+    /* background-color: transparent; */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  
+  .atm_1 {
+
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin: 30px;
+    width: 32%;
+    height: 40vh;
+    /* background-color: red; */
+    border-radius: 18px;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.flip-card:hover .atm_1 {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+    border-radius: 18px;
+  }
+  
+  
+  .firstrow{
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    transition-delay: 3s linear;
+}
+.secondrow{
+    width: 100%;
+    display: flex;
+    transition-delay: 3s linear;
+}
+.firstrow p{
+    flex: 1;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.firstrow img{
+    border-radius: 50%;
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+.secondrow img{
+    border-radius: 9px;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+.thirdrow{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.thirdrow p{
+    margin-left: 20px;
+    font-size: 25px;
+}
+.fourthrow{
+    display: flex;
+
+}
+.firstdiv{
+    flex-direction: column;
+    flex: 1;
+}
+.fourthrow .secondiv{
+    flex-direction: column;
+    flex: 1;
+}
+.fourthrow .secondiv #month{
+    color: whitesmoke;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.fourthrow .secondiv #date{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.fourthrow .firstdiv #number{
+    color: whitesmoke;
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 20px;
+    /* flex-direction: column; */
+}
+.fourthrow .firstdiv #valid{
+    color: whitesmoke;
+    font-size: 13px;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+.fifthrow{
+    display: flex;
+}
+.fifthrow .firstdiv{
+    display: flex;
+    flex-direction: column;
+}
+.fifthrow .secondiv{
+    display: flex;
+}
+.fifthrow .firstdiv #ownername{
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.fifthrow .firstdiv #international{
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.fifthrow .secondiv #visa{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-style: italic;
+
+}
+.flip-card-back {
+    color: whitesmoke;
+    transform: rotateY(180deg);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .flip-card-back .backfirstrow{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    margin-top: 10px;
+  }
+  .flip-card-back .backsecondrow{
+
+    justify-content: center;
+    width: 80%;
+    height: 6vh;
+    background-color: black;
+    margin-top: 20px;
+  }
+  .backsecondrow hr{
+    margin-top: 6px;
+    /* opacity: .5; */
+  }
+  .backsecondrow p{
+    /* z-index: 3; */
+    position: absolute;
+    /* z-index: inherit; */
+    font-size: 20px;
+  }
+  .backthirdrow p{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .backthirdrow #Signature{
+    font-size: 18px;
+    text-align: center;
+  }
+  .backthirdrow img{
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    /* margin-right: 10px; */
+    margin-top: -35px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .flip-card {
+        /* background-color: transparent; */
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .atm_1 {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        margin: 17px;
+        width: 95%;
+        height: 38vh;
+        /* background-color: red; */
+        border-radius: 18px;
+        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    }
+    .firstrow p {
+        flex: 1;
+        font-size: 1.5rem;
+        color: whitesmoke;
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+    .body {
+        background-image: linear-gradient(to right,white,);
+    }
+    .flip-card {
+        /* background-color: white; */
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+  }
